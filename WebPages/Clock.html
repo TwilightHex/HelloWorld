@@ -3,11 +3,36 @@
 
 <head>
     <meta charset="utf-8">
-    <title>对&nbsp;&nbsp;我就是时钟</title>
+    <title>
+        对&nbsp;&nbsp;我就是时钟
+    </title>
 </head>
 
 <body>
-    <div id="clock">时钟加载失败，请刷新页面</div>
+    <noscript>
+        你的浏览器似乎未启用或
+        不支持JavaScript！
+    </noscript>
+    <div id="clock">
+        id="clock"
+    </div>
 </body>
+
+<script>
+    function showClock() {
+        var clockDate = new Date();
+
+        var clockYear   = clockDate.getFullYear();
+        var clockMonth  = clockDate.getMonth();
+        var clockDay    = clockDate.getDay();
+
+        var clockHour   = clockDate.getHours();
+        var clockMinute = clockDate.getMinutes();
+        var clockSecond = clockDate.getSeconds();
+
+        si = setInterval(function(){showClock()}, 500)
+       
+    }
+</script>
 
 </html>
