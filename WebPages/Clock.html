@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html >
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" lang="zh-CN">
     <title>
         对&nbsp;&nbsp;我就是时钟
     </title>
@@ -14,7 +14,16 @@
         不支持JavaScript！
     </noscript>
     <div id="clock">
-        id="clock"
+        <div class="showElementTagsForDev">
+            id="clock"
+        </div>
+        <div id="clock_hms">
+            时 分 秒
+        </div>
+        <div id="clock_ymd">
+            公历年月日
+        </div>
+        <div id="clock_LunarDate_And_weekday"></div>
     </div>
 </body>
 
@@ -30,9 +39,14 @@
         var clockMinute = clockDate.getMinutes();
         var clockSecond = clockDate.getSeconds();
 
-        si = setInterval(function(){showClock()}, 500)
-       
+        //need:print Date ()
+
+        si = setInterval(function(){showClock()}, 500);
+
+        //noreturn
     }
+
+    
 </script>
 
 </html>
