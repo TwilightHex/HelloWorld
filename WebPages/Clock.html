@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
     <meta charset="utf-8" lang="zh-CN">
@@ -44,6 +44,9 @@
         var clockMinute = clockDate.getMinutes();
         var clockSecond = clockDate.getSeconds();
 
+        var clockYMD = "公历" + clockYear+"年" + clockMonth+"月" + clockDay+"日";
+        var clockHMS = "时间" + clockHour+"时" + clockMinute+"分" +clockSecond+"秒";
+        
         //need:print Date ()
 
         si = setInterval(function(){showClock()}, 500);
